@@ -87,9 +87,6 @@ def root():
 def get_activities():
     return activities
 
-# Validate student is not already signed up
-def is_student_signed_up(activity_name: str, email: str):
-@app.post("/activities/{activity_name}/signup")
 def signup_for_activity(activity_name: str, email: str):
     """Sign up a student for an activity"""
     # Validate activity exists
